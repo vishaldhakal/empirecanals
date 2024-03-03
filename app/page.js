@@ -96,7 +96,6 @@ export default function Home() {
                 muted={true}
                 quality="high"
                 className="img-fluid hero-video"
-                poster="/rendering1.jpeg"
               ></video>
             </div>
           </div>
