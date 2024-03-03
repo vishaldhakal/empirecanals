@@ -32,6 +32,27 @@ export const metadata = {
 export default function Home() {
   return (
     <main>
+      <div class="floating fixxcont2">
+        <Link
+          href="#mycontact"
+          class="btn bgggggggg d-flex align-items-center btn-lg text-light rounded-2 w-100 shadow align-items-center justify-content-center text-decoration-none"
+        >
+          <div class="text-center d-flex flex-column">
+            <div>
+              <span class="textvsmall">Starting from </span>
+              <span class="text-big">$590K</span>
+            </div>
+            <span>
+              Send a message{" "}
+              <img
+                src="/arrow-right.svg"
+                alt="right arrow"
+                className="img-fluid rarr"
+              />
+            </span>
+          </div>
+        </Link>
+      </div>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

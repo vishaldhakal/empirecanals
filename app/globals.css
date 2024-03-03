@@ -206,3 +206,51 @@ textarea:active, textarea:focus{
 ul{
   padding-left: 0 !important;
 }
+
+
+.fixxcont, .fixxcont2 {
+  display: none;
+}
+
+.bgggggggg {
+  background-color: #ff5722 !important;
+  color: #fff !important;
+}
+
+.br-m {
+  border-radius: 9px !important;
+  padding-top: 0.65rem !important;
+  padding-bottom: 0.65rem !important;
+  box-shadow: 0 0 30px 0 rgba(75, 75, 75, 0.1) !important;
+}
+
+@media only screen and (max-width: 768px){
+.fixxcont2 {
+    bottom: 12px;
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 9px;
+}}
+
+@media only screen and (max-width: 768px)
+{
+  .fixxcont, .fixxcont2 {
+    position: fixed;
+    z-index: 9999;
+    display: block;
+}
+
+}
+
+.textvsmall {
+  font-size: .9rem !important;
+  color: #fff;
+}
+.text-big {
+  font-size: 1.2rem !important;
+  color: #fff;
+  font-weight: 800;
+  letter-spacing: .07rem;
+  text-shadow: 1px 1px #000;
+}
