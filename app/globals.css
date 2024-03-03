@@ -42,7 +42,7 @@ a:hover {
   color: #000;
 }
 .fs-large{
-  font-size: 5rem;
+  font-size: 4rem;
 }
 .offer1 img{
   width: 150px;
@@ -183,4 +183,16 @@ textarea:active, textarea:focus{
   text-decoration: none;
   outline: 0;
   box-shadow: none !important;
+}
+
+@media screen and (max-width:800px) {
+.fs-large{
+  font-size: 2rem !important;
+}
+.brand-color{
+  font-size: 1.1rem !important;
+}
+.register{
+  font-size: 2.5rem !important;
+}
 }

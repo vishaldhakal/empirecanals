@@ -1,8 +1,16 @@
 import Link from "next/link";
+import PreconSchema from "@/components/PreconSchema";
+import Script from "next/script";
 
 export default function Home() {
   return (
     <main>
+      <Script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(PreconSchema()),
+        }}
+      />
       <div className="b-patt py-md-5">
         <div className="container">
           <div className="row row-cols-1 row-cols-md-2 py-2 py-md-5 d-flex align-items-center">
@@ -11,54 +19,58 @@ export default function Home() {
                 <div className="text-start">
                   <h1 className="page-title">
                     <strong className="fs-large">
-                      <img
-                        src="/empire-canal-logo.png"
-                        alt=""
-                        className="img-fluid hero-img"
-                      />
+                      EMPIRE<span className="text-secondary">CANALS</span>{" "}
                     </strong>
                   </h1>
-                  <p className="page-subtitle">
+                  <h2 className="page-subtitle">
                     A community nestled between the Welland Canal
-                  </p>
+                  </h2>
                 </div>
                 <section className="mt-5">
                   <div className="d-flex justify-content-start">
-                    <div className="row row-cols-2 col-12 g-4 justify-content-center iconn">
-                      <div className="col d-flex gap-2 justify-content-start">
+                    <ul className="row row-cols-1 row-cols-md-2 col-12 g-4 justify-content-center iconn">
+                      <li className="col d-flex gap-2 justify-content-start">
                         <span className="icon Home"></span>
                         <p>Townhomes &amp; Detached</p>
-                      </div>
-                      <div className="col d-flex gap-2 justify-content-start">
+                      </li>
+                      <li className="col d-flex gap-2 justify-content-start">
                         <span className="icon Storeys"></span>
                         <p>2 Stories</p>
-                      </div>
-                      <div className="col d-flex gap-2 justify-content-start">
+                      </li>
+                      <li className="col d-flex gap-2 justify-content-start">
                         <span className="icon Size"></span>
                         <p>1,235 – 2,625 sq. ft.</p>
-                      </div>
-                      <div className="col d-flex gap-2 justify-content-start">
+                      </li>
+                      <li className="col d-flex gap-2 justify-content-start">
                         <span className="icon Bedrooms"></span>
                         <p>3 – 4 Bedrooms</p>
-                      </div>
-                      <div className="col d-flex gap-2 justify-content-start">
+                      </li>
+                      <li className="col d-flex gap-2 justify-content-start">
                         <span className="icon Bathrooms"></span>
                         <p>2.5 – 3.5 Bathrooms</p>
-                      </div>
-                      <div className="col d-flex gap-2 justify-content-start">
+                      </li>
+                      <li className="col d-flex gap-2 justify-content-start">
                         <span className="icon Location"></span>
                         <p>Welland | Niagara Region</p>
-                      </div>
-                    </div>
+                      </li>
+                    </ul>
                   </div>
                 </section>
-                <div className="d-flex mt-5 gap-4 align-items-center justify-content-start">
+                <div className="d-flex flex-column flex-md-row mt-5 gap-4 align-items-md-center justify-content-start">
                   <div className="d-flex justify-content-start gap-2">
                     <div className="offer1">
-                      <img src="/des1.png" alt="offer" className="img-fluid" />
+                      <img
+                        src="/des1.png"
+                        alt="Empire canals TOWNS STARTING FROM $589,990 offer"
+                        className="img-fluid"
+                      />
                     </div>
                     <div className="offer2">
-                      <img src="/des2.png" alt="offer" className="img-fluid" />
+                      <img
+                        src="/des2.png"
+                        alt="Empire canals DETACHED STARTING FROM $739,990 offer"
+                        className="img-fluid"
+                      />
                     </div>
                   </div>
                   <Link
@@ -84,6 +96,7 @@ export default function Home() {
                 muted={true}
                 quality="high"
                 className="img-fluid hero-video"
+                poster="/rendering1.jpeg"
               ></video>
             </div>
           </div>
@@ -95,19 +108,19 @@ export default function Home() {
           <div className="container pt-3 " id="gallery">
             <div className="my-md-5 my-3"></div>
             <div className="pt-md-5 pt-5">
-              <h2 className="fw-bold fs-1 pb-3  ps-3 ps-md-0 d-flex justify-content-center  brand-color">
-                Models and Renderings
+              <h2 className="fw-bold fs-1 pb-3  ps-3 ps-md-0 d-flex justify-content-center brand-color">
+                Empire Canals : Models and Renderings
               </h2>
             </div>
             <div className="rounded-3">
               <div className="d-flex justify-content-between pb-3">
-                <div className="row me-0 row-cols-1 row-cols-sm-2 row-cols-lg-3 justify-content-center g-4 me-0">
+                <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-3 justify-content-center g-4">
                   <div className="col">
                     <div className="afte">
                       <img
                         loading="lazy"
                         src="/rendering1.jpeg"
-                        alt="Empire Wyndfield Rendering"
+                        alt="Empire Wyndfield Rendering 1"
                         className="img-fluid imghei"
                       />
                     </div>
@@ -117,7 +130,7 @@ export default function Home() {
                       <img
                         loading="lazy"
                         src="/rendering2.jpeg"
-                        alt="Empire Wyndfield Rendering"
+                        alt="Empire Wyndfield Rendering 2"
                         className="img-fluid imghei"
                       />
                     </div>
@@ -127,7 +140,7 @@ export default function Home() {
                       <img
                         loading="lazy"
                         src="/rendering3.jpeg"
-                        alt="Empire Wyndfield Rendering"
+                        alt="Empire Wyndfield Rendering 3"
                         className="img-fluid imghei"
                       />
                     </div>
@@ -137,7 +150,7 @@ export default function Home() {
                       <img
                         loading="lazy"
                         src="/rendering4.jpeg"
-                        alt="Empire Wyndfield Rendering"
+                        alt="Empire Wyndfield Rendering 4"
                         className="img-fluid imghei"
                       />
                     </div>
@@ -147,7 +160,7 @@ export default function Home() {
                       <img
                         loading="lazy"
                         src="/rendering5.jpeg"
-                        alt="Empire Wyndfield Rendering"
+                        alt="Empire Wyndfield Rendering 5"
                         className="img-fluid imghei"
                       />
                     </div>
@@ -157,7 +170,7 @@ export default function Home() {
                       <img
                         loading="lazy"
                         src="/rendering6.jpeg"
-                        alt="Empire Wyndfield  Rendering"
+                        alt="Empire Wyndfield  Rendering 6"
                         className="img-fluid imghei"
                       />
                     </div>
@@ -173,7 +186,7 @@ export default function Home() {
           <div className="my-md-5 my-3"></div>
           <div className="pt-md-5 pt-5">
             <h2 className="fw-bold fs-1 pb-3  ps-3 ps-md-0 d-flex justify-content-center custom-underline brand-color">
-              Floor Plans
+              Empire Canals :Floor Plans
             </h2>
             <div>
               <div className="row me-0 row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 me-0 d-flex justify-content-center">
@@ -183,7 +196,7 @@ export default function Home() {
                       loading="lazy"
                       src="empire-floorplan1.gif"
                       className="card-img-top py-4 rounded-top-mine"
-                      alt="Queensland Condos 1 bed"
+                      alt="Empire canals floorplans 1"
                     />
                   </div>
                 </div>
@@ -193,7 +206,7 @@ export default function Home() {
                       loading="lazy"
                       src="empire-floorplan2.gif"
                       className="card-img-top py-4 rounded-top-mine"
-                      alt="Queensland Condos 1 bed"
+                      alt="Empire canals floorplans 2"
                     />
                   </div>
                 </div>
@@ -203,7 +216,7 @@ export default function Home() {
                       loading="lazy"
                       src="empire-floorplan3.gif"
                       className="card-img-top py-4 rounded-top-mine"
-                      alt="Queensland Condos 1 bed"
+                      alt="Empire canals floorplans 3"
                     />
                   </div>
                 </div>
@@ -216,8 +229,8 @@ export default function Home() {
         <div className="container pt-md-5 pt-5" id="location">
           <div className="pt-md-5 pt-5"></div>
           <div className="py-5">
-            <h2 className="fw-bold fs-1 mb-0 text-center justify-content-center">
-              <span className="mx-1 pb-3">Project Location</span>
+            <h2 className="fw-bold fs-1 mb-0 text-center justify-content-center brand-color">
+              Empire Canals : Project Location
             </h2>
             <span className="small-text text-center d-flex justify-content-center custom-underline pb-3">
               6 Anderson Road, Brantford, Ontario
@@ -250,7 +263,8 @@ export default function Home() {
               <div className="registertext px-4 d-flex justify-content-center align-items-center  text-center">
                 <p>
                   Register today to get the updated information such as floor
-                  plan, pricing &amp; availability
+                  <br className="d-none d-md-inline" /> plan, pricing &amp;
+                  availability of Empire Canals
                 </p>
               </div>
             </div>
@@ -335,7 +349,7 @@ export default function Home() {
       <div className="py-5"></div>
       <img
         src="/footer-seperator.svg"
-        alt="footer seperator"
+        alt="footer seperator for rmpire canals page"
         className="img-fluid footsep"
       />
       <footer className="footerr  pb-5 mb-4">
@@ -346,7 +360,7 @@ export default function Home() {
                 <img
                   src="empire-canal-logo.png"
                   className="img-fluid navbar-brand"
-                  alt="empire-canal-logo"
+                  alt="Empire canal logo in footer"
                 />
               </p>
               <span className=" justifyy">
@@ -372,7 +386,7 @@ export default function Home() {
               </div>
             </div>
             <div className="col-md-1 "></div>
-            <div className="col-md-4 mt-md-4 py-md-5 py-5 center-sm px-5 ">
+            <div className="col-md-4 mt-md-4 py-md-5 py-5 center-sm px-4 px-md-5 ">
               <div>
                 <h5 className="text-dark fw-bold mt-3 mb-3">About</h5>
                 <div className="list d-block ">
@@ -390,16 +404,16 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="col-md-2 mt-md-5 pt-md-5 mt-sm-0 pt-4 center-sm d-flex justify-content-center text-center">
+            <div className="col-md-2 mt-md-5 pt-md-5 mt-sm-0 pt-4 center-sm d-flex justify-content-start justify-content-md-center px-4 text-center">
               <img
                 src="/empire-logo.png"
                 className="img-fluid footer-logo"
-                alt="Empire Communities Logo"
+                alt="Empire Communities Logo which is a developer of empire canals project"
               />
             </div>
           </div>
 
-          <div className="list mt-5 pt-5 d-md-none d-block center-sm">
+          <div className="list mt-5 pt-5 d-md-none d-block center-sm px-2">
             <p className="">
               Website designed by{" "}
               <a
