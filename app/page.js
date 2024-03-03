@@ -1,95 +1,418 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main>
+      <div className="b-patt py-md-5">
+        <div className="container">
+          <div className="row row-cols-1 row-cols-md-2 py-2 py-md-5 d-flex align-items-center">
+            <div className="col order-1 order-md-0">
+              <div className="position-relative">
+                <div className="text-start">
+                  <h1 className="page-title">
+                    <strong className="fs-large">
+                      <img
+                        src="/empire-canal-logo.png"
+                        alt=""
+                        className="img-fluid hero-img"
+                      />
+                    </strong>
+                  </h1>
+                  <p className="page-subtitle">
+                    A community nestled between the Welland Canal
+                  </p>
+                </div>
+                <section className="mt-5">
+                  <div className="d-flex justify-content-start">
+                    <div className="row row-cols-2 col-12 g-4 justify-content-center iconn">
+                      <div className="col d-flex gap-2 justify-content-start">
+                        <span className="icon Home"></span>
+                        <p>Townhomes &amp; Detached</p>
+                      </div>
+                      <div className="col d-flex gap-2 justify-content-start">
+                        <span className="icon Storeys"></span>
+                        <p>2 Stories</p>
+                      </div>
+                      <div className="col d-flex gap-2 justify-content-start">
+                        <span className="icon Size"></span>
+                        <p>1,235 – 2,625 sq. ft.</p>
+                      </div>
+                      <div className="col d-flex gap-2 justify-content-start">
+                        <span className="icon Bedrooms"></span>
+                        <p>3 – 4 Bedrooms</p>
+                      </div>
+                      <div className="col d-flex gap-2 justify-content-start">
+                        <span className="icon Bathrooms"></span>
+                        <p>2.5 – 3.5 Bathrooms</p>
+                      </div>
+                      <div className="col d-flex gap-2 justify-content-start">
+                        <span className="icon Location"></span>
+                        <p>Welland | Niagara Region</p>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <div className="d-flex mt-5 gap-4 align-items-center justify-content-start">
+                  <div className="d-flex justify-content-start gap-2">
+                    <div className="offer1">
+                      <img src="/des1.png" alt="offer" className="img-fluid" />
+                    </div>
+                    <div className="offer2">
+                      <img src="/des2.png" alt="offer" className="img-fluid" />
+                    </div>
+                  </div>
+                  <Link
+                    className="btn btn-lg btn-register shadow"
+                    href="#contact"
+                  >
+                    Register Now
+                    <img
+                      src="/arrow-right.svg"
+                      alt="right arrow"
+                      className="img-fluid rarr"
+                    />
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="col">
+              <video
+                src="/empire_canals_desktop.mp4"
+                type="video/mp4"
+                autoPlay={true}
+                loop={true}
+                muted={true}
+                quality="high"
+                className="img-fluid hero-video"
+              ></video>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+      <section className="container" id="renderings">
+        <div>
+          <div className="container pt-3 " id="gallery">
+            <div className="my-md-5 my-3"></div>
+            <div className="pt-md-5 pt-5">
+              <h2 className="fw-bold fs-1 pb-3  ps-3 ps-md-0 d-flex justify-content-center  brand-color">
+                Models and Renderings
+              </h2>
+            </div>
+            <div className="rounded-3">
+              <div className="d-flex justify-content-between pb-3">
+                <div className="row me-0 row-cols-1 row-cols-sm-2 row-cols-lg-3 justify-content-center g-4 me-0">
+                  <div className="col">
+                    <div className="afte">
+                      <img
+                        loading="lazy"
+                        src="/rendering1.jpeg"
+                        alt="Empire Wyndfield Rendering"
+                        className="img-fluid imghei"
+                      />
+                    </div>
+                  </div>
+                  <div className="col">
+                    <div className="afte">
+                      <img
+                        loading="lazy"
+                        src="/rendering2.jpeg"
+                        alt="Empire Wyndfield Rendering"
+                        className="img-fluid imghei"
+                      />
+                    </div>
+                  </div>
+                  <div className="col">
+                    <div href="#" className="afte">
+                      <img
+                        loading="lazy"
+                        src="/rendering3.jpeg"
+                        alt="Empire Wyndfield Rendering"
+                        className="img-fluid imghei"
+                      />
+                    </div>
+                  </div>
+                  <div className="col">
+                    <div className="afte">
+                      <img
+                        loading="lazy"
+                        src="/rendering4.jpeg"
+                        alt="Empire Wyndfield Rendering"
+                        className="img-fluid imghei"
+                      />
+                    </div>
+                  </div>
+                  <div className="col">
+                    <div className="afte">
+                      <img
+                        loading="lazy"
+                        src="/rendering5.jpeg"
+                        alt="Empire Wyndfield Rendering"
+                        className="img-fluid imghei"
+                      />
+                    </div>
+                  </div>
+                  <div className="col">
+                    <div className="afte">
+                      <img
+                        loading="lazy"
+                        src="/rendering6.jpeg"
+                        alt="Empire Wyndfield  Rendering"
+                        className="img-fluid imghei"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="b-patt pb-5" id="plans">
+        <div className="container pt-5" id="plans">
+          <div className="my-md-5 my-3"></div>
+          <div className="pt-md-5 pt-5">
+            <h2 className="fw-bold fs-1 pb-3  ps-3 ps-md-0 d-flex justify-content-center custom-underline brand-color">
+              Floor Plans
+            </h2>
+            <div>
+              <div className="row me-0 row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 me-0 d-flex justify-content-center">
+                <div className="col ">
+                  <div className="card border-0 shadow-lg rounded-mine floorbtns">
+                    <img
+                      loading="lazy"
+                      src="empire-floorplan1.gif"
+                      className="card-img-top py-4 rounded-top-mine"
+                      alt="Queensland Condos 1 bed"
+                    />
+                  </div>
+                </div>
+                <div className="col ">
+                  <div className="card border-0 shadow-lg rounded-mine floorbtns">
+                    <img
+                      loading="lazy"
+                      src="empire-floorplan2.gif"
+                      className="card-img-top py-4 rounded-top-mine"
+                      alt="Queensland Condos 1 bed"
+                    />
+                  </div>
+                </div>
+                <div className="col ">
+                  <div className="card border-0 shadow-lg rounded-mine floorbtns">
+                    <img
+                      loading="lazy"
+                      src="empire-floorplan3.gif"
+                      className="card-img-top py-4 rounded-top-mine"
+                      alt="Queensland Condos 1 bed"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="location">
+        <div className="container pt-md-5 pt-5" id="location">
+          <div className="pt-md-5 pt-5"></div>
+          <div className="py-5">
+            <h2 className="fw-bold fs-1 mb-0 text-center justify-content-center">
+              <span className="mx-1 pb-3">Project Location</span>
+            </h2>
+            <span className="small-text text-center d-flex justify-content-center custom-underline pb-3">
+              6 Anderson Road, Brantford, Ontario
+            </span>
+            <div>
+              <div className="bg-white p-1   rounded-mine d-flex justify-content-center ">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2920.260529397992!2d-79.25010492397651!3d42.95171389751798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d3364cf3e2ed39%3A0x96818e24310daf4!2s635%20Canal%20Bank%20St%2C%20Welland%2C%20ON%20L0S%201K0%2C%20Canada!5e0!3m2!1sen!2snp!4v1709468941292!5m2!1sen!2snp"
+                  width="900"
+                  height="450"
+                  allowFullScreen=""
+                  loading="lazy"
+                  className="border-0"
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div className="py-5"></div>
+      <section id="contact">
+        <div className="pt-5" id="Contact">
+          <div className="pt-5 mt-5">
+            <div className="row mx-0 mb-4">
+              <h6 className="text-center fs-1 fw-bold pt-3 register ">
+                {" "}
+                Register today!
+              </h6>
+              <div className="registertext px-4 d-flex justify-content-center align-items-center  text-center">
+                <p>
+                  Register today to get the updated information such as floor
+                  plan, pricing &amp; availability
+                </p>
+              </div>
+            </div>
+            <div className="row row-cols-1 row-cols-md-3 mx-0 g-5 pb-md-5">
+              <div className="col-md-3"></div>
+              <div className="col-md-6 px-md-5 ">
+                <form action="contactForm.php" method="POST">
+                  <div className="row">
+                    <div className="mb-3 ">
+                      <input
+                        type="text "
+                        placeholder="Name "
+                        name="name"
+                        id="name"
+                        className="form-control py-4 bg-lighter "
+                        required=""
+                      />
+                    </div>
+                  </div>
+                  <div className="row row-cols-1 row-cols-sm-2 ">
+                    <div className="col ">
+                      <div className="mb-3 ">
+                        <input
+                          type="text "
+                          aria-describedby="emailHelp "
+                          placeholder="Phone "
+                          name="phone"
+                          id="phone"
+                          className="form-control py-4 bg-lighter "
+                          required=""
+                        />
+                      </div>
+                    </div>
+                    <div className="col ">
+                      <div className="mb-3 ">
+                        <input
+                          type="text "
+                          aria-describedby="emailHelp "
+                          placeholder="Email "
+                          name="email"
+                          id="email"
+                          className="form-control py-4 bg-lighter "
+                          required=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="row ">
+                    <div className=" ">
+                      <textarea
+                        name="message "
+                        id="message"
+                        placeholder="Enter your message"
+                        className="form-control py-4 bg-lighter mess"
+                        required=""
+                        rows={4}
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div className="row mt-3">
+                    <p className=" text-muted sm-text text-center mt-0">
+                      I consent to receive future communications about Empire
+                      Wyndfield in Brantford. I understand I can opt out at
+                      anytime by sending an email.
+                    </p>
+                  </div>
+                  <div className="row">
+                    <div className="col text-center">
+                      <button className="btn btn-register btn-lg w-100 p-2 px-4 btn-lg py-3 shadow">
+                        Send Message
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div className="row-cols-md-3"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div className="py-5"></div>
+      <div className="py-5"></div>
+      <img
+        src="/footer-seperator.svg"
+        alt="footer seperator"
+        className="img-fluid footsep"
+      />
+      <footer className="footerr  pb-5 mb-4">
+        <div className="container ">
+          <div className="row row-cols-1 row-cols-sm-2 row-cols-md-5 pt-1 justify-content-between ">
+            <div className="col-md-5 my-3 fotwidth center-sm px-4 px-md-0">
+              <p className=" ">
+                <img
+                  src="empire-canal-logo.png"
+                  className="img-fluid navbar-brand"
+                  alt="empire-canal-logo"
+                />
+              </p>
+              <span className=" justifyy">
+                We do not represent the builder. All renderings, incentives,
+                pricing are subject to terms &amp; conditions and may change at
+                anytime without notice – see sales representatives for more
+                details. not intended to solicit those under contract with
+                another brokerage. All inquiries will go to Salima Nazir, real
+                estate agent at HOMELIFE GALAXY REAL ESTATE LTD. in TORONTO,
+                Ontario.{" "}
+              </span>
+              <div className="list pt-md-5 pt-3 d-md-block d-none">
+                <p className="">
+                  Website designed by{" "}
+                  <a
+                    href="https://www.sixdesign.ca/"
+                    target="_blank"
+                    className="text-dark text-decoration-none"
+                  >
+                    <strong>SixDesign.</strong>{" "}
+                  </a>
+                </p>
+              </div>
+            </div>
+            <div className="col-md-1 "></div>
+            <div className="col-md-4 mt-md-4 py-md-5 py-5 center-sm px-5 ">
+              <div>
+                <h5 className="text-dark fw-bold mt-3 mb-3">About</h5>
+                <div className="list d-block ">
+                  <p className="mybot pb-md-0 pb-0">
+                    Builder : Empire Communities
+                  </p>
+                  <p className="mybot pb-md-0 pb-0">
+                    Location : 635 Canal Bank St, Welland, ON L0S 1K0, Canada
+                  </p>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+                  <p className="mybot pb-md-0 pb-0">
+                    House Type : Detached &amp; Towns
+                  </p>
+                </div>
+              </div>
+            </div>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
+            <div className="col-md-2 mt-md-5 pt-md-5 mt-sm-0 pt-4 center-sm d-flex justify-content-center text-center">
+              <img
+                src="/empire-logo.png"
+                className="img-fluid footer-logo"
+                alt="Empire Communities Logo"
+              />
+            </div>
+          </div>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+          <div className="list mt-5 pt-5 d-md-none d-block center-sm">
+            <p className="">
+              Website designed by{" "}
+              <a
+                href="https://www.sixdesign.ca/"
+                target="_blank"
+                className="text-dark text-decoration-none"
+              >
+                <strong>SixDesign.</strong>{" "}
+              </a>
+            </p>
+          </div>
+        </div>
+      </footer>
     </main>
   );
 }
