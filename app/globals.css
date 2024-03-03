@@ -28,7 +28,9 @@ a:hover {
   color: #000;
 }
 .hero-video{
-  clip-path: polygon(0 0, 90% 0, 100% 100%, 0 90%);
+  /* clip-path: polygon(0 0, 90% 0, 100% 100%, 0 90%); */
+  border-top-left-radius: 99px;
+  border-bottom-right-radius: 99px;
   width: 100%;
 }
 .page-title{
