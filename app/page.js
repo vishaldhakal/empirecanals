@@ -93,8 +93,8 @@ export default function Home() {
                 type="video/mp4"
                 autoPlay={true}
                 loop={true}
+                playsInline={true}
                 muted={true}
-                quality="high"
                 className="img-fluid hero-video"
               ></video>
             </div>
