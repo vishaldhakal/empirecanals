@@ -195,4 +195,12 @@ textarea:active, textarea:focus{
 .register{
   font-size: 2.5rem !important;
 }
+.iconn li{
+  font-size: 1.2rem !important;
+  font-weight: 500 !important;
+}
+}
+
+ul{
+  padding-left: 0 !important;
 }
