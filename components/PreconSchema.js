@@ -2,7 +2,7 @@ const PreconSchema = () => {
   return {
     "@context": "https://schema.org/",
     "@type": "Product",
-    name: "Empire Canals - NOW SELLING NEW PHASE FROM $589,990",
+    name: "Empire Canals - NEW PHASE NOW SELLING FROM $589,990",
     image: "/rendering1.jpeg",
     description:
       "New Towns & Detached In Welland From $589,990. Family-friendly streetscapes, on-site schools, community amenities and scenic trails, creeks and parks",
