@@ -280,7 +280,7 @@ export default function Home() {
               Empire Canals : Project Location
             </h2>
             <span className="small-text text-center d-flex justify-content-center custom-underline pb-3">
-              6 Anderson Road, Brantford, Ontario
+              635 Canal Bank St, Welland, ON L0S 1K0, Canada
             </span>
             <div>
               <div className="bg-white p-1   rounded-mine d-flex justify-content-center ">
@@ -374,8 +374,8 @@ export default function Home() {
                   <div className="row mt-3">
                     <p className=" text-muted sm-text text-center mt-0">
                       I consent to receive future communications about Empire
-                      Wyndfield in Brantford. I understand I can opt out at
-                      anytime by sending an email.
+                      Canals in Welland. I understand I can opt out at anytime
+                      by sending an email.
                     </p>
                   </div>
                   <div className="row">
