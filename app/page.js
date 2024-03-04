@@ -34,7 +34,7 @@ export default function Home() {
     <main>
       <div class="floating fixxcont2">
         <Link
-          href="#mycontact"
+          href="#contact"
           class="btn bgggggggg d-flex align-items-center btn-lg text-light rounded-2 w-100 shadow align-items-center justify-content-center text-decoration-none"
         >
           <div class="text-center d-flex flex-column">
