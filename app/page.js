@@ -1,6 +1,6 @@
 import Link from "next/link";
 import PreconSchema from "@/components/PreconSchema";
-import Script from "next/script";
+import ContactForm from "@/components/ContactForm";
 
 export const metadata = {
   keywords:
@@ -25,19 +25,18 @@ export const metadata = {
   },
   category: "real estate",
 };
-
 export default function Home() {
   return (
     <main>
-      <div class="floating fixxcont2">
+      <div className="floating fixxcont2">
         <Link
           href="#contact"
-          class="btn bgggggggg d-flex align-items-center btn-lg text-light rounded-2 w-100 shadow align-items-center justify-content-center text-decoration-none"
+          className="btn bgggggggg d-flex align-items-center btn-lg text-light rounded-2 w-100 shadow align-items-center justify-content-center text-decoration-none"
         >
-          <div class="text-center d-flex flex-column">
+          <div className="text-center d-flex flex-column">
             <div>
-              <span class="textvsmall">Starting from </span>
-              <span class="text-big">$590K</span>
+              <span className="textvsmall">Starting from </span>
+              <span className="text-big">$590K</span>
             </div>
             <span>
               Send a message{" "}
@@ -312,80 +311,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="row row-cols-1 row-cols-md-3 mx-0 g-5 pb-md-5">
-              <div className="col-md-3"></div>
-              <div className="col-md-6 px-md-5 ">
-                <form action="contactForm.php" method="POST">
-                  <div className="row">
-                    <div className="mb-3 ">
-                      <input
-                        type="text "
-                        placeholder="Name "
-                        name="name"
-                        id="name"
-                        className="form-control py-4 bg-lighter "
-                        required=""
-                      />
-                    </div>
-                  </div>
-                  <div className="row row-cols-1 row-cols-sm-2 ">
-                    <div className="col ">
-                      <div className="mb-3 ">
-                        <input
-                          type="text "
-                          aria-describedby="emailHelp "
-                          placeholder="Phone "
-                          name="phone"
-                          id="phone"
-                          className="form-control py-4 bg-lighter "
-                          required=""
-                        />
-                      </div>
-                    </div>
-                    <div className="col ">
-                      <div className="mb-3 ">
-                        <input
-                          type="text "
-                          aria-describedby="emailHelp "
-                          placeholder="Email "
-                          name="email"
-                          id="email"
-                          className="form-control py-4 bg-lighter "
-                          required=""
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div className="row ">
-                    <div className=" ">
-                      <textarea
-                        name="message "
-                        id="message"
-                        placeholder="Enter your message"
-                        className="form-control py-4 bg-lighter mess"
-                        required=""
-                        rows={4}
-                      ></textarea>
-                    </div>
-                  </div>
-                  <div className="row mt-3">
-                    <p className=" text-muted sm-text text-center mt-0">
-                      I consent to receive future communications about Empire
-                      Canals in Welland. I understand I can opt out at anytime
-                      by sending an email.
-                    </p>
-                  </div>
-                  <div className="row">
-                    <div className="col text-center">
-                      <button className="btn btn-register btn-lg w-100 p-2 px-4 btn-lg py-3 shadow">
-                        Send Message
-                      </button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-              <div className="row-cols-md-3"></div>
-            </div>
+            <ContactForm></ContactForm>
           </div>
         </div>
       </section>
