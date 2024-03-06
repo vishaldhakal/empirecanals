@@ -12,7 +12,7 @@ export async function POST(req, res) {
     const { data, error } = await resend.emails.send({
       from: "Inquiry <info@empirecanalhomes.ca>",
       to: ["Salimanazeer@hotmail.com"],
-      subject: "Inquiry About Welland Canals Landing Page",
+      subject: "Inquiry From Empire Canals Landing Page",
       text: `Name: ${body.name}\nEmail: ${body.email} \nPhone: ${body.phone} \nMessage: ${body.message} \n`,
     });
 
